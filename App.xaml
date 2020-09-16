@@ -7,3 +7,4 @@
          
     </Application.Resources>
 </Application>
+<!-- Specifies that MainWindow.xaml should be initialised on startup -->

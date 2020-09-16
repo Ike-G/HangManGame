@@ -1,0 +1,5 @@
+C:\Users\IscG\Documents\HangManGame\obj\Debug\netcoreapp3.1\HangManGame.csprojAssemblyReference.cache
+C:\Users\IscG\Documents\HangManGame\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\IscG\Documents\HangManGame\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\IscG\Documents\HangManGame\obj\Debug\netcoreapp3.1\HangManGame_MarkupCompile.cache
+C:\Users\IscG\Documents\HangManGame\obj\Debug\netcoreapp3.1\HangManGame_MarkupCompile.lref
