@@ -9,7 +9,7 @@ using System.Windows;
 namespace HangManGame
 {
     /// <summary>
-    /// Interaction logic for App.xaml
+    /// Place all logic which should be applied to the entire program within this file
     /// </summary>
     public partial class App : Application
     {

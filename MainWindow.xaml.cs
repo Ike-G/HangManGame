@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace HangManGame
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Place all data which should apply only to MainWindow within this file
     /// </summary>
     public partial class MainWindow : Window
     {
