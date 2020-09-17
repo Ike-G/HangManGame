@@ -9,4 +9,14 @@ namespace HangManGame
             Console.WriteLine("Hello World!");
         }
     }
+
+    partial class Game 
+    {
+
+    }
+
+    static partial class Menu 
+    {
+
+    }
 }
