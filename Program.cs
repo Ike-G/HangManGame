@@ -7,27 +7,28 @@ namespace HangManGame
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
-            
-            var reader = new StreamReader(File.OpenRead("Categories/Brands.csv"));
-            List<string> listA = new List<string>();
-            
-            while (!reader.EndOfStream)
+            using(var reader = new StreamReader("Categories/Brands.csv"))
             {
-                var line = reader.ReadLine();
-                var values = line.Split(';');
+                Console.WriteLine("Hello World!");
+                List<string> listA = new List<string>();
 
-                listA.Add(values[0]);
-                foreach (var coloumn1 in listA)
+                while (!reader.EndOfStream)
                 {
-                    Console.WriteLine(coloumn1);
-                    
+                    var line = reader.ReadLine();
+                    var values = line.Split(';');
+
+                    listA.Add(values[0]);
+                    foreach (var coloumn1 in listA)
+                    {
+                        Console.WriteLine(coloumn1);
+                    }
                 }
             }
         }
     }
+}
 
     class SortingCsv
     {
@@ -47,4 +48,4 @@ namespace HangManGame
     {
 
     }
-}
+

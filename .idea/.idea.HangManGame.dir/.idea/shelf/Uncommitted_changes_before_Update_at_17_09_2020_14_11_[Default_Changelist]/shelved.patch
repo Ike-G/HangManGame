@@ -1,0 +1,172 @@
+Index: HangManGame.csproj
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><Project Sdk=\"Microsoft.NET.Sdk.WindowsDesktop\">\r\n\r\n  <PropertyGroup>\r\n    <OutputType>WinExe</OutputType>\r\n    <TargetFramework>netcoreapp3.1</TargetFramework>\r\n    <UseWPF>true</UseWPF>\r\n  </PropertyGroup>\r\n\r\n</Project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- HangManGame.csproj	(revision e892cac273e458cd855111e9550432f9124a5df6)
++++ HangManGame.csproj	(date 1600348107061)
+@@ -6,4 +6,8 @@
+     <UseWPF>true</UseWPF>
+   </PropertyGroup>
+ 
++  <ItemGroup>
++    <None Remove="Dictionary.csv" />
++  </ItemGroup>
++
+ </Project>
+\ No newline at end of file
+Index: Dictionarys/Countries.csv
+===================================================================
+--- Dictionarys/Countries.csv	(date 1600348268230)
++++ Dictionarys/Countries.csv	(date 1600348268230)
+@@ -0,0 +1,22 @@
++Afghanistan,Albania,Algeria,American Samoa,Andorra,Angola,Anguilla,Antarctica,Antigua And Barbuda,Argentina,Armenia,Aruba,Australia,
++Austria,Azerbaijan,Bahamas,Bahrain,Bangladesh,Barbados,Belarus,Belgium,Belize,Benin,Bermuda,Bhutan,Bolivia,Bosnia And Herzegovina,
++Botswana,Bouvet Island,Brazil,British Indian Ocean Territory,Brunei Darussalam,Bulgaria,Burkina Faso,Burundi,Cambodia,Cameroon,Canada,Cape
++Verde,Cayman Islands,Central African Republic,Chad,Chile,China,Christmas Island,Cocos (keeling) Islands,Colombia,Comoros,Congo,Congo,The
++Democratic Republic Of The,Cook Islands,Costa Rica,Cote D'ivoire,Croatia,Cuba,Cyprus,Czech Republic,Denmark,Djibouti,Dominica,Dominican
++Republic,East Timor,Ecuador,Egypt,El Salvador,Equatorial Guinea,Eritrea,Estonia,Ethiopia,Falkland Islands (malvinas),Faroe Islands,Fiji,
++Finland,France,French Guiana,French Polynesia,French Southern Territories,Gabon,Gambia,Georgia,Germany,Ghana,Gibraltar,Greece,Greenland,
++Grenada,Guadeloupe,Guam,Guatemala,Guinea,Guinea-bissau,Guyana,Haiti,Heard Island And Mcdonald Islands,Holy See (vatican City State),
++Honduras,Hong Kong,Hungary,Iceland,India,Indonesia,Iran,Islamic Republic Of,Iraq,Ireland,Israel,Italy,Jamaica,Japan,Jordan,Kazakstan,
++Kenya,Kiribati,Korea,Democratic People's Republic Of,Korea,Republic Of,Kosovo,Kuwait,Kyrgyzstan,Lao People's Democratic Republic,Latvia,
++Lebanon,Lesotho,Liberia,Libyan Arab Jamahiriya,Liechtenstein,Lithuania,Luxembourg,Macau,Macedonia,The Former Yugoslav Republic Of,
++Madagascar,Malawi,Malaysia,Maldives,Mali,Malta,Marshall Islands,Martinique,Mauritania,Mauritius,Mayotte,Mexico,Micronesia,Federated
++States Of,Moldova,Republic Of,Monaco,Mongolia,Montserrat,Montenegro,Morocco,Mozambique,Myanmar,Namibia,Nauru,Nepal,Netherlands,
++Netherlands Antilles,New Caledonia,New Zealand,Nicaragua,Niger,Nigeria,Niue,Norfolk Island,Northern Mariana Islands,Norway,Oman,Pakistan,
++Palau,Palestinian Territory,Occupied,Panama,Papua New Guinea,Paraguay,Peru,Philippines,Pitcairn,Poland,Portugal,Puerto Rico,Qatar,
++Reunion,Romania,Russian Federation,Rwanda,Saint Helena,Saint Kitts And Nevis,Saint Lucia,Saint Pierre And Miquelon,Saint Vincent And The
++Grenadines,Samoa,San Marino,Sao Tome And Principe,Saudi Arabia,Senegal,Serbia,Seychelles,Sierra Leone,Singapore,Slovakia,Slovenia,Solomon
++Islands,Somalia,South Africa,South Georgia And The South Sandwich Islands,Spain,Sri Lanka,Sudan,Suriname,Svalbard And Jan Mayen,Swaziland,
++Sweden,Switzerland,Syrian Arab Republic,Taiwan,Province Of China,Tajikistan,Tanzania,United Republic Of,Thailand,Togo,Tokelau,Tonga,
++Trinidad And Tobago,Tunisia,Turkey,Turkmenistan,Turks And Caicos Islands,Tuvalu,Uganda,Ukraine,United Arab Emirates,United Kingdom,United
++States,United States Minor Outlying Islands,Uruguay,Uzbekistan,Vanuatu,Venezuela,Viet Nam,Virgin Islands,British,Virgin Islands,U.s.,
++Wallis And Futuna,Western Sahara,Yemen,Zambia,Zimbabwe
+\ No newline at end of file
+Index: obj/HangManGame.csproj.nuget.g.props
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"no\"?>\r\n<Project ToolsVersion=\"14.0\" xmlns=\"http://schemas.microsoft.com/developer/msbuild/2003\">\r\n  <PropertyGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\r\n    <RestoreSuccess Condition=\" '$(RestoreSuccess)' == '' \">True</RestoreSuccess>\r\n    <RestoreTool Condition=\" '$(RestoreTool)' == '' \">NuGet</RestoreTool>\r\n    <ProjectAssetsFile Condition=\" '$(ProjectAssetsFile)' == '' \">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>\r\n    <NuGetPackageRoot Condition=\" '$(NuGetPackageRoot)' == '' \">$(UserProfile)\\.nuget\\packages\\</NuGetPackageRoot>\r\n    <NuGetPackageFolders Condition=\" '$(NuGetPackageFolders)' == '' \">C:\\Users\\IscG\\.nuget\\packages\\</NuGetPackageFolders>\r\n    <NuGetProjectStyle Condition=\" '$(NuGetProjectStyle)' == '' \">PackageReference</NuGetProjectStyle>\r\n    <NuGetToolVersion Condition=\" '$(NuGetToolVersion)' == '' \">5.7.0</NuGetToolVersion>\r\n  </PropertyGroup>\r\n  <ItemGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\r\n    <SourceRoot Include=\"$([MSBuild]::EnsureTrailingSlash($(NuGetPackageFolders)))\" />\r\n  </ItemGroup>\r\n  <PropertyGroup>\r\n    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>\r\n  </PropertyGroup>\r\n</Project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- obj/HangManGame.csproj.nuget.g.props	(revision e892cac273e458cd855111e9550432f9124a5df6)
++++ obj/HangManGame.csproj.nuget.g.props	(date 1600346306229)
+@@ -5,13 +5,10 @@
+     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\IscG\.nuget\packages\</NuGetPackageFolders>
++    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\zak\.nuget\packages\</NuGetPackageFolders>
+     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.7.0</NuGetToolVersion>
++    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.5.0</NuGetToolVersion>
+   </PropertyGroup>
+-  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+-    <SourceRoot Include="$([MSBuild]::EnsureTrailingSlash($(NuGetPackageFolders)))" />
+-  </ItemGroup>
+   <PropertyGroup>
+     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+   </PropertyGroup>
+Index: obj/HangManGame.csproj.nuget.dgspec.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"format\": 1,\r\n  \"restore\": {\r\n    \"C:\\\\Users\\\\IscG\\\\Documents\\\\HangManGame\\\\HangManGame.csproj\": {}\r\n  },\r\n  \"projects\": {\r\n    \"C:\\\\Users\\\\IscG\\\\Documents\\\\HangManGame\\\\HangManGame.csproj\": {\r\n      \"version\": \"1.0.0\",\r\n      \"restore\": {\r\n        \"projectUniqueName\": \"C:\\\\Users\\\\IscG\\\\Documents\\\\HangManGame\\\\HangManGame.csproj\",\r\n        \"projectName\": \"HangManGame\",\r\n        \"projectPath\": \"C:\\\\Users\\\\IscG\\\\Documents\\\\HangManGame\\\\HangManGame.csproj\",\r\n        \"packagesPath\": \"C:\\\\Users\\\\IscG\\\\.nuget\\\\packages\\\\\",\r\n        \"outputPath\": \"C:\\\\Users\\\\IscG\\\\Documents\\\\HangManGame\\\\obj\\\\\",\r\n        \"projectStyle\": \"PackageReference\",\r\n        \"configFilePaths\": [\r\n          \"C:\\\\Users\\\\IscG\\\\AppData\\\\Roaming\\\\NuGet\\\\NuGet.Config\"\r\n        ],\r\n        \"originalTargetFrameworks\": [\r\n          \"netcoreapp3.1\"\r\n        ],\r\n        \"sources\": {\r\n          \"https://api.nuget.org/v3/index.json\": {}\r\n        },\r\n        \"frameworks\": {\r\n          \"netcoreapp3.1\": {\r\n            \"projectReferences\": {}\r\n          }\r\n        },\r\n        \"warningProperties\": {\r\n          \"warnAsError\": [\r\n            \"NU1605\"\r\n          ]\r\n        }\r\n      },\r\n      \"frameworks\": {\r\n        \"netcoreapp3.1\": {\r\n          \"imports\": [\r\n            \"net461\",\r\n            \"net462\",\r\n            \"net47\",\r\n            \"net471\",\r\n            \"net472\",\r\n            \"net48\"\r\n          ],\r\n          \"assetTargetFallback\": true,\r\n          \"warn\": true,\r\n          \"frameworkReferences\": {\r\n            \"Microsoft.NETCore.App\": {\r\n              \"privateAssets\": \"all\"\r\n            },\r\n            \"Microsoft.WindowsDesktop.App.WPF\": {\r\n              \"privateAssets\": \"none\"\r\n            }\r\n          },\r\n          \"runtimeIdentifierGraphPath\": \"C:\\\\Program Files\\\\dotnet\\\\sdk\\\\3.1.401\\\\RuntimeIdentifierGraph.json\"\r\n        }\r\n      }\r\n    }\r\n  }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- obj/HangManGame.csproj.nuget.dgspec.json	(revision e892cac273e458cd855111e9550432f9124a5df6)
++++ obj/HangManGame.csproj.nuget.dgspec.json	(date 1600346304634)
+@@ -1,20 +1,20 @@
+ {
+   "format": 1,
+   "restore": {
+-    "C:\\Users\\IscG\\Documents\\HangManGame\\HangManGame.csproj": {}
++    "C:\\Users\\zak\\RiderProjects\\HangManGame\\HangManGame.csproj": {}
+   },
+   "projects": {
+-    "C:\\Users\\IscG\\Documents\\HangManGame\\HangManGame.csproj": {
++    "C:\\Users\\zak\\RiderProjects\\HangManGame\\HangManGame.csproj": {
+       "version": "1.0.0",
+       "restore": {
+-        "projectUniqueName": "C:\\Users\\IscG\\Documents\\HangManGame\\HangManGame.csproj",
++        "projectUniqueName": "C:\\Users\\zak\\RiderProjects\\HangManGame\\HangManGame.csproj",
+         "projectName": "HangManGame",
+-        "projectPath": "C:\\Users\\IscG\\Documents\\HangManGame\\HangManGame.csproj",
+-        "packagesPath": "C:\\Users\\IscG\\.nuget\\packages\\",
+-        "outputPath": "C:\\Users\\IscG\\Documents\\HangManGame\\obj\\",
++        "projectPath": "C:\\Users\\zak\\RiderProjects\\HangManGame\\HangManGame.csproj",
++        "packagesPath": "C:\\Users\\zak\\.nuget\\packages\\",
++        "outputPath": "C:\\Users\\zak\\RiderProjects\\HangManGame\\obj\\",
+         "projectStyle": "PackageReference",
+         "configFilePaths": [
+-          "C:\\Users\\IscG\\AppData\\Roaming\\NuGet\\NuGet.Config"
++          "C:\\Users\\zak\\AppData\\Roaming\\NuGet\\NuGet.Config"
+         ],
+         "originalTargetFrameworks": [
+           "netcoreapp3.1"
+@@ -53,7 +53,7 @@
+               "privateAssets": "none"
+             }
+           },
+-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
++          "runtimeIdentifierGraphPath": "C:\\Users\\zak\\.dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+         }
+       }
+     }
+Index: obj/project.assets.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"version\": 3,\r\n  \"targets\": {\r\n    \".NETCoreApp,Version=v3.1\": {}\r\n  },\r\n  \"libraries\": {},\r\n  \"projectFileDependencyGroups\": {\r\n    \".NETCoreApp,Version=v3.1\": []\r\n  },\r\n  \"packageFolders\": {\r\n    \"C:\\\\Users\\\\IscG\\\\.nuget\\\\packages\\\\\": {}\r\n  },\r\n  \"project\": {\r\n    \"version\": \"1.0.0\",\r\n    \"restore\": {\r\n      \"projectUniqueName\": \"C:\\\\Users\\\\IscG\\\\Documents\\\\HangManGame\\\\HangManGame.csproj\",\r\n      \"projectName\": \"HangManGame\",\r\n      \"projectPath\": \"C:\\\\Users\\\\IscG\\\\Documents\\\\HangManGame\\\\HangManGame.csproj\",\r\n      \"packagesPath\": \"C:\\\\Users\\\\IscG\\\\.nuget\\\\packages\\\\\",\r\n      \"outputPath\": \"C:\\\\Users\\\\IscG\\\\Documents\\\\HangManGame\\\\obj\\\\\",\r\n      \"projectStyle\": \"PackageReference\",\r\n      \"configFilePaths\": [\r\n        \"C:\\\\Users\\\\IscG\\\\AppData\\\\Roaming\\\\NuGet\\\\NuGet.Config\"\r\n      ],\r\n      \"originalTargetFrameworks\": [\r\n        \"netcoreapp3.1\"\r\n      ],\r\n      \"sources\": {\r\n        \"https://api.nuget.org/v3/index.json\": {}\r\n      },\r\n      \"frameworks\": {\r\n        \"netcoreapp3.1\": {\r\n          \"projectReferences\": {}\r\n        }\r\n      },\r\n      \"warningProperties\": {\r\n        \"warnAsError\": [\r\n          \"NU1605\"\r\n        ]\r\n      }\r\n    },\r\n    \"frameworks\": {\r\n      \"netcoreapp3.1\": {\r\n        \"imports\": [\r\n          \"net461\",\r\n          \"net462\",\r\n          \"net47\",\r\n          \"net471\",\r\n          \"net472\",\r\n          \"net48\"\r\n        ],\r\n        \"assetTargetFallback\": true,\r\n        \"warn\": true,\r\n        \"frameworkReferences\": {\r\n          \"Microsoft.NETCore.App\": {\r\n            \"privateAssets\": \"all\"\r\n          },\r\n          \"Microsoft.WindowsDesktop.App.WPF\": {\r\n            \"privateAssets\": \"none\"\r\n          }\r\n        },\r\n        \"runtimeIdentifierGraphPath\": \"C:\\\\Program Files\\\\dotnet\\\\sdk\\\\3.1.401\\\\RuntimeIdentifierGraph.json\"\r\n      }\r\n    }\r\n  }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- obj/project.assets.json	(revision e892cac273e458cd855111e9550432f9124a5df6)
++++ obj/project.assets.json	(date 1600346306348)
+@@ -8,19 +8,19 @@
+     ".NETCoreApp,Version=v3.1": []
+   },
+   "packageFolders": {
+-    "C:\\Users\\IscG\\.nuget\\packages\\": {}
++    "C:\\Users\\zak\\.nuget\\packages\\": {}
+   },
+   "project": {
+     "version": "1.0.0",
+     "restore": {
+-      "projectUniqueName": "C:\\Users\\IscG\\Documents\\HangManGame\\HangManGame.csproj",
++      "projectUniqueName": "C:\\Users\\zak\\RiderProjects\\HangManGame\\HangManGame.csproj",
+       "projectName": "HangManGame",
+-      "projectPath": "C:\\Users\\IscG\\Documents\\HangManGame\\HangManGame.csproj",
+-      "packagesPath": "C:\\Users\\IscG\\.nuget\\packages\\",
+-      "outputPath": "C:\\Users\\IscG\\Documents\\HangManGame\\obj\\",
++      "projectPath": "C:\\Users\\zak\\RiderProjects\\HangManGame\\HangManGame.csproj",
++      "packagesPath": "C:\\Users\\zak\\.nuget\\packages\\",
++      "outputPath": "C:\\Users\\zak\\RiderProjects\\HangManGame\\obj\\",
+       "projectStyle": "PackageReference",
+       "configFilePaths": [
+-        "C:\\Users\\IscG\\AppData\\Roaming\\NuGet\\NuGet.Config"
++        "C:\\Users\\zak\\AppData\\Roaming\\NuGet\\NuGet.Config"
+       ],
+       "originalTargetFrameworks": [
+         "netcoreapp3.1"
+@@ -59,7 +59,7 @@
+             "privateAssets": "none"
+           }
+         },
+-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
++        "runtimeIdentifierGraphPath": "C:\\Users\\zak\\.dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+       }
+     }
+   }
+diff --git Dictionary.csv Dictionary.csv
+new file mode 100644
+diff --git Dictionarys/Science.csv Dictionarys/Science.csv
+new file mode 100644
+diff --git Dictionarys/Sport.csv Dictionarys/Sport.csv
+new file mode 100644
+diff --git Dictionarys/Brands.csv Dictionarys/Brands.csv
+new file mode 100644
+diff --git Dictionarys/Films.csv Dictionarys/Films.csv
+new file mode 100644
