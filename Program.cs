@@ -37,4 +37,14 @@ namespace HangManGame
             
         }
     }
+
+    partial class Game 
+    {
+
+    }
+
+    static partial class Menu 
+    {
+
+    }
 }
