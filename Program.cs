@@ -7,6 +7,12 @@ namespace HangManGame
 {
     class Program
     {
+        // Main code
+        public UI initMenu = new UI(new Game());
+
+
+        
+        // Below is testing code
         static void Main()
         {
             void categoryTest() 
