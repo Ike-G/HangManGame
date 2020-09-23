@@ -6,11 +6,11 @@
     <e p="C:\Users\zak\RiderProjects\HangManGame" t="IncludeRecursive">
       <e p="bin" t="ExcludeRecursive" />
       <e p="Categories" t="Include">
-        <e p="Brands.csv" t="Include" />
-        <e p="Countries.csv" t="Include" />
-        <e p="Films.csv" t="Include" />
-        <e p="Science.csv" t="Include" />
-        <e p="Sport.csv" t="Include" />
+        <e p="Brands.txt" t="Include" />
+        <e p="Countries.txt" t="Include" />
+        <e p="Films.txt" t="Include" />
+        <e p="Science.txt" t="Include" />
+        <e p="Sport.txt" t="Include" />
       </e>
       <e p="Game.cs" t="Include" />
       <e p="HangManGame.csproj" t="IncludeRecursive" />

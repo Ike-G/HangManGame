@@ -11,23 +11,7 @@ namespace HangManGame
         {
             void categoryTest() 
             {
-                using (var reader = new StreamReader("Categories/Brands.csv"))
-                {
-                    Console.WriteLine("Hello World!");
-                    List<string> listA = new List<string>();
-
-                    while (!reader.EndOfStream)
-                    {
-                        var line = reader.ReadLine();
-                        var values = line.Split(';');
-
-                        listA.Add(values[0]);
-                        foreach (var coloumn1 in listA)
-                        {
-                            Console.WriteLine(coloumn1);
-                        }
-                    }
-                }
+                
             }
             void asciiTest()
             {

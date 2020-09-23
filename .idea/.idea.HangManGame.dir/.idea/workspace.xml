@@ -29,46 +29,27 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb18cf5c-93b6-43e5-858f-105400934bf7" name="Default Changelist" comment="Nearly able to sort it.">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]/HangManGame.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]/HangManGame.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]/HangManGame_MarkupCompile.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]/MainWindow.baml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]1/HangManGame.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]1/HangManGame.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]1/HangManGame_MarkupCompile.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]1/MainWindow.baml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]1/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11__Default_Changelist_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.runtimeconfig.dev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cs" afterDir="false" />
+    <list default="true" id="cb18cf5c-93b6-43e5-858f-105400934bf7" name="Default Changelist" comment="Nearly done the categories sorting array thing.">
+      <change afterPath="$PROJECT_DIR$/Categories/Brands.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Categories/Countries.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Categories/Films.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Categories/Science.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Categories/Sport.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Categories/Brands.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Categories/Countries.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Categories/Films.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Categories/Science.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Categories/Sport.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/HangManGame.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/HangManGame.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/HangManGame.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/HangManGame.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +71,11 @@
         <option value="$PROJECT_DIR$/Menu.cs" />
         <option value="$PROJECT_DIR$/Game.cs" />
         <option value="$PROJECT_DIR$/Program.cs" />
+        <option value="$PROJECT_DIR$/Categories/Brands.txt" />
+        <option value="$PROJECT_DIR$/Categories/Countries.txt" />
+        <option value="$PROJECT_DIR$/Categories/File.txt" />
+        <option value="$PROJECT_DIR$/Categories/Science.txt" />
+        <option value="$PROJECT_DIR$/Categories/Sport.txt" />
       </list>
     </option>
   </component>
@@ -144,6 +130,9 @@
       <workItem from="1600347972600" duration="1803000" />
       <workItem from="1600419054120" duration="3133000" />
       <workItem from="1600424155788" duration="1955000" />
+      <workItem from="1600444345333" duration="94000" />
+      <workItem from="1600680502788" duration="225000" />
+      <workItem from="1600853133341" duration="1188000" />
     </task>
     <task id="LOCAL-00001" summary="Just a test commit, with the Countries.csv">
       <created>1600348637141</created>
@@ -166,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600422094642</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Nearly done the categories sorting array thing.">
+      <created>1600444391731</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600444391731</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +198,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Just a test commit, with the Countries.csv" />
     <MESSAGE value="Nearly able to sort it." />
-    <option name="LAST_COMMIT_MESSAGE" value="Nearly able to sort it." />
+    <MESSAGE value="Nearly done the categories sorting array thing." />
+    <option name="LAST_COMMIT_MESSAGE" value="Nearly done the categories sorting array thing." />
   </component>
   <component name="WindowStateProjectService">
     <state x="121" y="51" key="DiffContextDialog" timestamp="1600349681209">
@@ -237,17 +234,17 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="426" y="0" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1600348401999" />
-    <state x="93" y="93" width="1095" height="495" key="VCS.FileHistoryDialog" timestamp="1600425810725">
+    <state x="93" y="93" width="1095" height="495" key="VCS.FileHistoryDialog" timestamp="1600680727062">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="VCS.FileHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1600425810725" />
-    <state x="233" y="70" key="Vcs.Push.Dialog.v2" timestamp="1600422102995">
+    <state x="93" y="93" width="1095" height="495" key="VCS.FileHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1600680727062" />
+    <state x="233" y="70" key="Vcs.Push.Dialog.v2" timestamp="1600444403644">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="70" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600422102995" />
-    <state x="459" y="251" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600422168184">
+    <state x="233" y="70" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600444403644" />
+    <state x="459" y="251" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600853153319">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="459" y="251" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1600422168184" />
+    <state x="459" y="251" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1600853153319" />
   </component>
 </project>
