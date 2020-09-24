@@ -8,6 +8,7 @@ namespace HangManGame
     partial class UI 
     {
         // After instantiation this determines the choices of the user with regards to modes/statistics
+        public char guessLetter { get; set; }
         public string[] asciiArt { get; } = 
         {
             "  +---+\n  |   |\n      |\n      |\n      |\n      |\n=========",
@@ -31,12 +32,26 @@ namespace HangManGame
 
             // Getting the guess data and displaying it 
             while (!g.finished) {
+                string displayData = g.word;
                 if (g.turnEnd) {
-                    if () {}
+                    if (g.guessResult) {
+                        Console.WriteLine("");
+                    } else {
+                        
+                    }
                 }
 
             }
 
+        }
+
+        public void getGuess(Boolean cont = true) 
+        {
+            if (cont) 
+            {
+                Console.Write("Please enter your guess: ");
+                
+            }
         }
     }
 }
