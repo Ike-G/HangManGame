@@ -15,6 +15,9 @@ namespace HangManGame
         public Boolean turnEnd { get; set; }
         public Boolean guessResult { get; set; }
         public string word { get; set; }
+        public void test() {
+            
+        }
         partial class Mode 
         {
             // Acts as an argument for instantiating the game, data should then be used to add to logic (Initially we can start with a single mode)

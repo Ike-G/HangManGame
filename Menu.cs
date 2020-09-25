@@ -45,12 +45,14 @@ namespace HangManGame
 
         }
 
-        public void getGuess(Boolean cont = true) 
+        public void getGuess(bool cont = true) 
         {
-            if (cont) 
-            {
-                Console.Write("Please enter your guess: ");
-                
+            Console.Write("Please enter your guess: ");
+            try {
+                this.guessLetter = Convert.ToChar(Console.ReadLine());
+            } catch(Exception) {
+                Console.WriteLine("Please enter a valid character");
+                getGuess();
             }
         }
     }

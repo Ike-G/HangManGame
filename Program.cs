@@ -10,37 +10,38 @@ namespace HangManGame
         // Main code
         public UI initMenu = new UI(new Game());
 
-
         
         // Below is testing code
         static void Main()
         {
-            void categoryTest() 
+            
+            
+        }
+        void categoryTest() 
+        {
+            using (var reader = new StreamReader("Categories/Brands.csv"))
             {
-                using (var reader = new StreamReader("Categories/Brands.csv"))
+                Console.WriteLine("Hello World!");
+                List<string> listA = new List<string>();
+
+                while (!reader.EndOfStream)
                 {
-                    Console.WriteLine("Hello World!");
-                    List<string> listA = new List<string>();
+                    var line = reader.ReadLine();
+                    var values = line.Split(';');
 
-                    while (!reader.EndOfStream)
+                    listA.Add(values[0]);
+                    foreach (var coloumn1 in listA)
                     {
-                        var line = reader.ReadLine();
-                        var values = line.Split(';');
-
-                        listA.Add(values[0]);
-                        foreach (var coloumn1 in listA)
-                        {
-                            Console.WriteLine(coloumn1);
-                        }
+                        Console.WriteLine(coloumn1);
                     }
                 }
             }
-            void asciiTest()
+        }
+        void asciiTest()
+        {
+            for (int i = 0; i < new UI(new Game()).asciiArt.Length; i++)
             {
-                for (int i = 0; i < new UI(new Game()).asciiArt.Length; i++)
-                {
-                    Console.WriteLine(new UI(new Game()).asciiArt[i]);
-                }
+                Console.WriteLine(new UI(new Game()).asciiArt[i]);
             }
         }
     }
