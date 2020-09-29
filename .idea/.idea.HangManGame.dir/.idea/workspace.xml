@@ -29,27 +29,28 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb18cf5c-93b6-43e5-858f-105400934bf7" name="Default Changelist" comment="Nearly done the categories sorting array thing.">
-      <change afterPath="$PROJECT_DIR$/Categories/Brands.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Categories/Countries.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Categories/Films.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Categories/Science.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Categories/Sport.txt" afterDir="false" />
+    <list default="true" id="cb18cf5c-93b6-43e5-858f-105400934bf7" name="Default Changelist" comment="Redone the .csv into .txt to better convert them into an array.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]1/HangManGame.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]1/HangManGame.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]1/HangManGame_MarkupCompile.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]1/MainWindow.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]1/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11__Default_Changelist_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Categories/Brands.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Categories/Countries.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Categories/Films.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Categories/Science.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Categories/Sport.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Menu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.runtimeconfig.dev.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/HangManGame.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/HangManGame.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/HangManGame.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/HangManGame.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,14 +69,15 @@
         <option value="$PROJECT_DIR$/Categories/Films.csv" />
         <option value="$PROJECT_DIR$/Categories/Science.csv" />
         <option value="$PROJECT_DIR$/Categories/Sport.csv" />
-        <option value="$PROJECT_DIR$/Menu.cs" />
-        <option value="$PROJECT_DIR$/Game.cs" />
-        <option value="$PROJECT_DIR$/Program.cs" />
         <option value="$PROJECT_DIR$/Categories/Brands.txt" />
         <option value="$PROJECT_DIR$/Categories/Countries.txt" />
         <option value="$PROJECT_DIR$/Categories/File.txt" />
         <option value="$PROJECT_DIR$/Categories/Science.txt" />
         <option value="$PROJECT_DIR$/Categories/Sport.txt" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.cs" />
+        <option value="$PROJECT_DIR$/Menu.cs" />
+        <option value="$PROJECT_DIR$/Program.cs" />
+        <option value="$PROJECT_DIR$/Game.cs" />
       </list>
     </option>
   </component>
@@ -88,14 +90,19 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34991708" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30016583" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="C#" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -132,7 +139,10 @@
       <workItem from="1600424155788" duration="1955000" />
       <workItem from="1600444345333" duration="94000" />
       <workItem from="1600680502788" duration="225000" />
-      <workItem from="1600853133341" duration="1188000" />
+      <workItem from="1600853133341" duration="3961000" />
+      <workItem from="1600949960945" duration="1525000" />
+      <workItem from="1601300047580" duration="58000" />
+      <workItem from="1601394307854" duration="5659000" />
     </task>
     <task id="LOCAL-00001" summary="Just a test commit, with the Countries.csv">
       <created>1600348637141</created>
@@ -162,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600444391731</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Redone the .csv into .txt to better convert them into an array.">
+      <created>1600855585742</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600855585742</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,29 +216,98 @@
     <MESSAGE value="Just a test commit, with the Countries.csv" />
     <MESSAGE value="Nearly able to sort it." />
     <MESSAGE value="Nearly done the categories sorting array thing." />
-    <option name="LAST_COMMIT_MESSAGE" value="Nearly done the categories sorting array thing." />
+    <MESSAGE value="Redone the .csv into .txt to better convert them into an array." />
+    <option name="LAST_COMMIT_MESSAGE" value="Redone the .csv into .txt to better convert them into an array." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="233" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601300101437">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1601300101437" />
     <state x="121" y="51" key="DiffContextDialog" timestamp="1600349681209">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="51" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1600349681209" />
-    <state width="1237" height="112" key="GridCell.Tab.0.bottom" timestamp="1600426803848">
+    <state width="1237" height="82" key="GridCell.Tab.0.bottom" timestamp="1601400002554">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="112" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1600426803848" />
-    <state width="1237" height="112" key="GridCell.Tab.0.center" timestamp="1600426803848">
+    <state width="1237" height="82" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601400002554" />
+    <state width="1237" height="82" key="GridCell.Tab.0.center" timestamp="1601400002554">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="112" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1600426803848" />
-    <state width="1237" height="112" key="GridCell.Tab.0.left" timestamp="1600426803848">
+    <state width="1237" height="82" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601400002554" />
+    <state width="1237" height="82" key="GridCell.Tab.0.left" timestamp="1601400002553">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="112" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1600426803848" />
-    <state width="1237" height="112" key="GridCell.Tab.0.right" timestamp="1600426803848">
+    <state width="1237" height="82" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601400002553" />
+    <state width="1237" height="82" key="GridCell.Tab.0.right" timestamp="1601400002554">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="112" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1600426803848" />
+    <state width="1237" height="82" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601400002554" />
+    <state width="1237" height="223" key="GridCell.Tab.1.bottom" timestamp="1601396395476">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="223" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601396395476" />
+    <state width="1237" height="223" key="GridCell.Tab.1.center" timestamp="1601396395476">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="223" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1601396395476" />
+    <state width="1237" height="223" key="GridCell.Tab.1.left" timestamp="1601396395475">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="223" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1601396395475" />
+    <state width="1237" height="223" key="GridCell.Tab.1.right" timestamp="1601396395476">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="223" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1601396395476" />
+    <state width="1237" height="223" key="GridCell.Tab.2.bottom" timestamp="1601396395476">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="223" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601396395476" />
+    <state width="1237" height="223" key="GridCell.Tab.2.center" timestamp="1601396395476">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="223" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1601396395476" />
+    <state width="1237" height="223" key="GridCell.Tab.2.left" timestamp="1601396395476">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="223" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1601396395476" />
+    <state width="1237" height="223" key="GridCell.Tab.2.right" timestamp="1601396395476">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="223" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1601396395476" />
+    <state width="1237" height="223" key="GridCell.Tab.3.bottom" timestamp="1601396395477">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="223" key="GridCell.Tab.3.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601396395477" />
+    <state width="1237" height="223" key="GridCell.Tab.3.center" timestamp="1601396395476">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="223" key="GridCell.Tab.3.center/0.0.1280.680@0.0.1280.680" timestamp="1601396395476" />
+    <state width="1237" height="223" key="GridCell.Tab.3.left" timestamp="1601396395476">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="223" key="GridCell.Tab.3.left/0.0.1280.680@0.0.1280.680" timestamp="1601396395476" />
+    <state width="1237" height="223" key="GridCell.Tab.3.right" timestamp="1601396395477">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="223" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1601396395477" />
+    <state width="1237" height="223" key="GridCell.Tab.4.bottom" timestamp="1601396395478">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="223" key="GridCell.Tab.4.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601396395478" />
+    <state width="1237" height="223" key="GridCell.Tab.4.center" timestamp="1601396395477">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="223" key="GridCell.Tab.4.center/0.0.1280.680@0.0.1280.680" timestamp="1601396395477" />
+    <state width="1237" height="223" key="GridCell.Tab.4.left" timestamp="1601396395477">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="223" key="GridCell.Tab.4.left/0.0.1280.680@0.0.1280.680" timestamp="1601396395477" />
+    <state width="1237" height="223" key="GridCell.Tab.4.right" timestamp="1601396395478">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="223" key="GridCell.Tab.4.right/0.0.1280.680@0.0.1280.680" timestamp="1601396395478" />
     <state x="122" y="51" key="MergeDialog" timestamp="1600422143407">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -234,14 +320,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="426" y="0" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1600348401999" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1601395611638">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1601395611638" />
     <state x="93" y="93" width="1095" height="495" key="VCS.FileHistoryDialog" timestamp="1600680727062">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="VCS.FileHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1600680727062" />
-    <state x="233" y="70" key="Vcs.Push.Dialog.v2" timestamp="1600444403644">
+    <state x="233" y="70" key="Vcs.Push.Dialog.v2" timestamp="1600855603588">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="70" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600444403644" />
+    <state x="233" y="70" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600855603588" />
     <state x="459" y="251" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600853153319">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

@@ -19,9 +19,9 @@ namespace HangManGame
             "  +---+\n  |   |\n  O   |\n /|\\  |\n / \\  |\n      |\n========="
         };
         
-        public UI(Game g) 
+       public UI(Game g) 
         {
-            Console.WriteLine($"Welcome to Hangman!\nBelow are the available game modes: \n{g.modes}");
+       //     Console.WriteLine($"Welcome to Hangman!\nBelow are the available game modes: \n{g.modes}");
         }
     }
 }

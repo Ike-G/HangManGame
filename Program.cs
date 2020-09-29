@@ -7,41 +7,23 @@ namespace HangManGame
 {
     class Program
     {
+        void asciiTest()
+        {
+            for (int i = 0; i < new UI(new Game()).asciiArt.Length; i++)
+            {
+                Console.WriteLine(new UI(new Game()).asciiArt[i]);
+            }
+        }
         static void Main()
         {
-            void categoryTest() 
-            {
-                
-            }
-            void asciiTest()
-            {
-                for (int i = 0; i < new UI(new Game()).asciiArt.Length; i++)
-                {
-                    Console.WriteLine(new UI(new Game()).asciiArt[i]);
-                }
-            }
+            new Game();
         }
     }
     partial class UI 
     {
 
     }
-
-    class SortingCsv
-    {
-        static void Sort(string[] args)
-        {
-
-        }
-    }
-    public partial class Game
-    {
-        public List<Game.Mode> modes { get; set; }
-        public partial class Mode 
-        {
-
-        }
-    }
+    
 }
 
 
