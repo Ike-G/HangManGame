@@ -22,7 +22,7 @@ namespace HangManGame
             // 0 for easy and 1 for hard, 0 is below 6 and 1 is 6 or above
             int difficulty = 0;
             // 0 is for brands, 1 for countries, 2 for films, 3 for science, 4 for sport
-            int categorySelected = 1;
+            int categorySelected = 4;
             // Deffining my arrays
             string[] brands =
             {
@@ -1298,9 +1298,9 @@ namespace HangManGame
             string[] sport =
             {
                 "Arsenal", "Aston Villa", "Brighton and Hove Albion", "Burnley", "Chelsea", "Crystal Palace", "Everton",
-                "Fulham", "Leeds United", "Liverpool", "Leicester City", "Manchester City", "Manchester United",
+                "Fulham", "Liverpool", "Leicester", "Manchester City", "Manchester United",
                 "Newcastle United", "Sheffield United", "Southampton", "Tottenham Hotspur", "West Bromwich Albion",
-                "West Ham United", "Wolverhampton Wanderers"
+                "West Ham United", "Wolverhampton Wanderers", "Luton", "Celtic", "Hove", "Rye", "Lewes", "York", "Leeds"
             };
 
             // The sorting
@@ -1308,8 +1308,7 @@ namespace HangManGame
             string potentialWord = "";
             string selectedWord = "";
             bool searchingForWord = true;
-            {
-                while (searchingForWord = true)
+            while (searchingForWord == true)
                 {
                     if (categorySelected == 0)
                     {
@@ -1350,6 +1349,31 @@ namespace HangManGame
                     {
                         Console.WriteLine("Invalid category input, ensure it is between 0 and 4, inclusive.");
                     }
+                    if (difficulty == 0)
+                    {
+                        if (potentialWord.Length < 6)
+                        {
+                            selectedWord = potentialWord;
+                            searchingForWord = false;
+                        }
+                    }
+                    else if (difficulty == 1)
+                    {
+                        if (potentialWord.Length >= 6)
+                        {
+                            selectedWord = potentialWord;
+                            searchingForWord = false;
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid difficulty input, please enter either 0 for easy, or 1 for hard.");
+                        searchingForWord = false;
+                    }
+
+                    //Console.WriteLine(categorySelected);
+                    //Console.WriteLine(difficulty);
+                    //Console.WriteLine(selectedWord);
                 }
             }
 
@@ -1360,7 +1384,6 @@ namespace HangManGame
         {
             // Acts as an argument for instantiating the game, data should then be used to add to logic (Initially we can start with a single mode)
 
-            // Zakk - Considering this probably ties best into the categories stuff it's probably best if you work in here and then Harrison can make sure there's a space for it in the main logic
-
+            // Zakk - Considering this probably ties best into the categories stuff it's probably best if you work in here and then Harrison can make sure there's a space for it in the mai
         }
-    }    
+    }        

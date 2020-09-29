@@ -29,27 +29,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb18cf5c-93b6-43e5-858f-105400934bf7" name="Default Changelist" comment="Redone the .csv into .txt to better convert them into an array.">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]1/HangManGame.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]1/HangManGame.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]1/HangManGame_MarkupCompile.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]1/MainWindow.baml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]1/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11_[Default_Changelist]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_11__Default_Changelist_1.xml" beforeDir="false" />
+    <list default="true" id="cb18cf5c-93b6-43e5-858f-105400934bf7" name="Default Changelist" comment="Nearly done with the sorting, just saving it with this commit.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HangManGame.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Menu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/HangManGame.runtimeconfig.dev.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/HangManGame.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +127,7 @@
       <workItem from="1600853133341" duration="3961000" />
       <workItem from="1600949960945" duration="1525000" />
       <workItem from="1601300047580" duration="58000" />
-      <workItem from="1601394307854" duration="5659000" />
+      <workItem from="1601394307854" duration="6856000" />
     </task>
     <task id="LOCAL-00001" summary="Just a test commit, with the Countries.csv">
       <created>1600348637141</created>
@@ -179,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600855585742</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Nearly done with the sorting, just saving it with this commit.">
+      <created>1601400093488</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601400093488</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +209,8 @@
     <MESSAGE value="Nearly able to sort it." />
     <MESSAGE value="Nearly done the categories sorting array thing." />
     <MESSAGE value="Redone the .csv into .txt to better convert them into an array." />
-    <option name="LAST_COMMIT_MESSAGE" value="Redone the .csv into .txt to better convert them into an array." />
+    <MESSAGE value="Nearly done with the sorting, just saving it with this commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Nearly done with the sorting, just saving it with this commit." />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601300101437">
@@ -228,22 +221,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="51" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1600349681209" />
-    <state width="1237" height="82" key="GridCell.Tab.0.bottom" timestamp="1601400002554">
+    <state width="1237" height="82" key="GridCell.Tab.0.bottom" timestamp="1601401250785">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="82" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601400002554" />
-    <state width="1237" height="82" key="GridCell.Tab.0.center" timestamp="1601400002554">
+    <state width="1237" height="82" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601401250785" />
+    <state width="1237" height="82" key="GridCell.Tab.0.center" timestamp="1601401250785">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="82" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601400002554" />
-    <state width="1237" height="82" key="GridCell.Tab.0.left" timestamp="1601400002553">
+    <state width="1237" height="82" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601401250785" />
+    <state width="1237" height="82" key="GridCell.Tab.0.left" timestamp="1601401250784">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="82" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601400002553" />
-    <state width="1237" height="82" key="GridCell.Tab.0.right" timestamp="1601400002554">
+    <state width="1237" height="82" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601401250784" />
+    <state width="1237" height="82" key="GridCell.Tab.0.right" timestamp="1601401250785">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="82" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601400002554" />
+    <state width="1237" height="82" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601401250785" />
     <state width="1237" height="223" key="GridCell.Tab.1.bottom" timestamp="1601396395476">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -336,5 +329,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="459" y="251" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1600853153319" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1601400515613">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1601400515613" />
   </component>
 </project>
