@@ -11,21 +11,28 @@ namespace HangManGame
 {
     public class Game  
     {
+        // This object returns all major values for use within the Menu.
+        public Mode mode { get; set; } // Acts as a dictionary for categories and difficulties
+        
+        // Theoretically these should be combined into a single won variable. This didn't occur to me.
+        public bool won { get; set; } = false; // true if the game is won
+        public bool lost { get; set; } = false; // true is the game is lost
 
-        //public List<Game.Mode> modes { get; set; }
+        public bool guessResult { get; set; } // Result of each guess. This is set each time a result is requested.
 
-        // In instantiating an object of this class the game should start
-        // This file contains all logic after the game starts, and dictates when it ends
-        public Mode mode { get; set; } 
-        public bool won { get; set; } = false;
-        public bool lost { get; set; } = false;
-        public bool guessResult { get; set; }
-        public int fails { get; set; } = 0;
-        public string word { get; set; } // IMPORTANT: After this is declared knownLetters must be set to new List<char>(word.length)
+        // In the future a guessHistory list should be added, noting the result of past guesses and preventing double guesses.
+
+        public int fails { get; set; } = 0; // Number of fails. This works as an index value for asciiArt in Menu.cs.
+        public string word { get; set; } // The word which the user attempts to guess.
+        
+        // List of categories
         public string[] catList { get; set; } = new string[5] {"Brands", "Countries", "Films", "Science", "Sport"};
+        // List of difficulties
         public string[] diffList { get; set; } = new string[2] {"Easy", "Hard"};
-        public char[] knownLetters { get; set; }
 
+        public char[] knownLetters { get; set; } // Letters thus far known to the user.
+
+        // Contains values for use within the game constructor, also providing input validation alongside Menu.cs
         public class Mode
         {
             private int _difficulty;
@@ -49,6 +56,8 @@ namespace HangManGame
                 }
             }
         }
+        
+        // Assigns all major variables
         public Game()
         {
             // For difficulty 0, words may only be below 6 letters.
@@ -356,6 +365,7 @@ namespace HangManGame
             }
             this.knownLetters = new char[word.Length]; 
         }
+        // Takes the result and consequences of each guess.
         public void evaluateGuess() 
         {
             // Take input

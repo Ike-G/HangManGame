@@ -9,29 +9,11 @@ namespace HangManGame
     {
         public static void Main()
         {
-            Console.WriteLine("Main is running.");
+            // Code is encapsulated within UIStartUp, which acts as a framework for all actions.
+            // UIStartUp takes an instance of game as an argument
             UI.UIStartUp(new Game());
         }
-        void categoryTest() 
-        {
-            using (var reader = new StreamReader("Categories/Brands.csv"))
-            {
-                Console.WriteLine("Hello World!");
-                List<string> listA = new List<string>();
-
-                while (!reader.EndOfStream)
-                {
-                    var line = reader.ReadLine();
-                    var values = line.Split(';');
-
-                    listA.Add(values[0]);
-                    foreach (var coloumn1 in listA)
-                    {
-                        Console.WriteLine(coloumn1);
-                    }
-                }
-            }
-        }
+        // Finds all indexes where a character is in a string. 
         public static List<int> allIndexesOf(string s, char c) 
         {
             List<int> indexes = new List<int>();
