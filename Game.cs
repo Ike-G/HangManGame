@@ -51,10 +51,16 @@ namespace HangManGame
         }
         public Game()
         {
-            // 0 for easy and 1 for hard, 0 is below 6 and 1 is 6 or above
-            // 0 is for brands, 1 for countries, 2 for films, 3 for science, 4 for sport
-            this.mode = new Mode();
+            // For difficulty 0, words may only be below 6 letters.
+            // For difficulty 1, words may be 6 letters or greater.
+            // There are four categories: 
+            // 0: Brands
+            // 1: Countries
+            // 2: Films
+            // 3: Science 
+            // 4: Sport
 
+            this.mode = new Mode(); // An empty mode object must be declared in order to be used later by the UI.
 
             string[] brands =
             {
@@ -296,45 +302,41 @@ namespace HangManGame
                 "WestHamUnited","WolverhamptonWanderers","Luton","Celtic","Hove","Rye","Lewes","York","Leeds"
             };
 
-            string potentialWord = ""; 
+            string potentialWord; 
             bool searchingForWord = true;
-            while (searchingForWord)
+            while (searchingForWord) // The while loop ends when a word of length corresponding to difficulty is selected.
             {
                 if (mode.category == 0)
                 {
                     Random rand = new Random();
                     int index = rand.Next(brands.Length);
                     potentialWord = brands[index];
-                    // Console.WriteLine(potentialWord);
                 }
                 else if (mode.category == 1)
                 {
                     Random rand = new Random();
                     int index = rand.Next(countries.Length);
                     potentialWord = countries[index];
-                    // Console.WriteLine(potentialWord);
                 }
                 else if (mode.category == 2)
                 {
                     Random rand = new Random();
                     int index = rand.Next(films.Length);
                     potentialWord = films[index];
-                    // Console.WriteLine(potentialWord);
                 }
                 else if (mode.category == 3)
                 {
                     Random rand = new Random();
                     int index = rand.Next(science.Length);
                     potentialWord = science[index];
-                    // Console.WriteLine(potentialWord);
                 }
-                else if (mode.category == 4)
+                else
                 {
                     Random rand = new Random();
                     int index = rand.Next(sport.Length);
                     potentialWord = sport[index];
-                    // Console.WriteLine(potentialWord);
                 }
+                // Data validation occurs in the mode class, therefore it is not necessary in this instance.
                 if (mode.difficulty == 0)
                 {
                     if (potentialWord.Length < 6)
@@ -343,7 +345,7 @@ namespace HangManGame
                         searchingForWord = false;
                     }
                 }
-                else if (mode.difficulty == 1)
+                else
                 {
                     if (potentialWord.Length >= 6)
                     {
@@ -351,79 +353,11 @@ namespace HangManGame
                         searchingForWord = false;
                     }
                 }
-
-                // Console.WriteLine(mode.category);
-                // Console.WriteLine(mode.difficulty);
-                // Console.WriteLine(this.word);
             }
-            this.knownLetters = new char[word.Length];
+            this.knownLetters = new char[word.Length]; 
         }
-        // public void guessWord(char[] wordArray) // Removed word and guessLetter as both may be referenced through this object
-        // {
-        //     // bool gameOver = false; - Use (this.won || this.lost) instead of gameOver
-        //     int allowedGuesses = 0; // If this refers to the number of stages for a single word then it is 6
-        //     char[] blankArray = word.ToCharArray(); // This returns an array including the word. For a blank list use this.knownLetters
-        //     int total = 0; // Total wasn't declared in the for loop, I assume it is meant to be here? 
-        //     int leftToGuess = wordArray.Length; 
-        //     for (int i = 0; i < allowedGuesses; i++) 
-        //     {
-        //         if (wordArray[i] == UI.guessLetter)
-        //         {
-        //             blankArray[i] = UI.guessLetter;
-        //             leftToGuess = leftToGuess - 1;
-                    
-        //         }
-        //         if (wordArray[i] != UI.guessLetter && (wordArray[i] == ' ' || wordArray[i] == '_'))
-        //         {
-        //             blankArray[i] = '_';
-        //             total += 1;
-        //         }
-        //         if (total == leftToGuess) {
-        //             this.fails += 1; // I'm referring to this.fails instead of wrongGuesses as it is within the object.
-        //         }
-        //         if (this.fails == allowedGuesses)
-        //         {
-        //             this.lost = true; // Changed from gameOver to this.lost, as it is more specific. 
-        //         }
-        //     }
-        // }
-        // char[] blankArray = selectedWord.ToCharArray();
-        // int WrongGuesses = 0;
-        // int Total = 0;
-        // List<char> wordArray = new List<char>() {selectedWord};
-        // // for (int i = 0, i < blankArray.length; i++)
-        // //{
-        // //    blankArray[i] = "_" // to make teh blank slots under scores when printed. 
-        // //}
-        // // for (int i = 0, i < allowedGuesses, i++)
-        // //{
-        // //    oldArray == blankArray
-        // //    "guess" input == guessLetter ;
-        // //    blankArray == *BlankArrayGuesser*;
-        // //    if (oldArray = blankArray){
-        // //        wrongGuesses = wrongGuesses + 1;
-        // //    }
-        // //    if guesses == allowedGuesses{
-        // //        gameOver;
-        // //}
-        // // all that need to be done with this function is put it in a for i loop with allowed guesses with new guess letters every i value, 
-        // public char[] BlankArrayGuesser(char guessLetter, char[] wordArray, char[] blankArray) {
-        //     for (int i = 0; i < wordArray.Length; i++) {
-        //         if (wordArray[i] == UI.guessLetter)
-        //         {
-        //             blankArray[i] = UI.guessLetter;
-        //         }
-        //         if (wordArray[i] != UI.guessLetter && (wordArray[i] == ' ' || wordArray[i] == '_'))
-        //         {
-        //             blankArray[i] = '_';
-        //         }
-        //     }
-        //     return blankArray;
-        // }
         public void evaluateGuess() 
         {
-            // Render word for user to guess on.
-            
             // Take input
             UI.getGuess();
 

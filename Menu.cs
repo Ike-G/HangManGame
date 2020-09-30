@@ -59,15 +59,14 @@ namespace HangManGame
             
             // After the game class finishes its logic it should return its status as well as whether the guess was valid or not 
             do {
-                renderWord(g);
-                Console.WriteLine($"Word is: {g.word}");
-                g.evaluateGuess();
+                renderWord(g); // Word is rendered
+                g.evaluateGuess(); // Guess is requested
                 if (g.guessResult) {
                     Console.WriteLine($"{UI.guessLetter} is valid!");
                 } else {
                     Console.WriteLine($"{UI.guessLetter} is not valid.\n{asciiArt[g.fails]}");
                 }
-            } while (!(g.won || g.lost));
+            } while (!(g.won || g.lost)); // Feedback must run once before code continues.
             
             if (g.won) {
                 Console.Write("Congratulations! You won.\n\nWould you like to play again? [y/n]: ");

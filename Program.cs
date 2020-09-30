@@ -7,10 +7,6 @@ namespace HangManGame
 {
     class Program
     {
-        // Main code
-        
-        
-        // Below is testing code
         public static void Main()
         {
             Console.WriteLine("Main is running.");
