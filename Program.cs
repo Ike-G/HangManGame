@@ -11,7 +11,7 @@ namespace HangManGame
         
         
         // Below is testing code
-        static void Main()
+        public static void Main()
         {
             Console.WriteLine("Main is running.");
             UI.UIStartUp(new Game());

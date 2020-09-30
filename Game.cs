@@ -305,41 +305,41 @@ namespace HangManGame
                     Random rand = new Random();
                     int index = rand.Next(brands.Length);
                     potentialWord = brands[index];
-                    Console.WriteLine(potentialWord);
+                    // Console.WriteLine(potentialWord);
                 }
                 else if (mode.category == 1)
                 {
                     Random rand = new Random();
                     int index = rand.Next(countries.Length);
                     potentialWord = countries[index];
-                    Console.WriteLine(potentialWord);
+                    // Console.WriteLine(potentialWord);
                 }
                 else if (mode.category == 2)
                 {
                     Random rand = new Random();
                     int index = rand.Next(films.Length);
                     potentialWord = films[index];
-                    Console.WriteLine(potentialWord);
+                    // Console.WriteLine(potentialWord);
                 }
                 else if (mode.category == 3)
                 {
                     Random rand = new Random();
                     int index = rand.Next(science.Length);
                     potentialWord = science[index];
-                    Console.WriteLine(potentialWord);
+                    // Console.WriteLine(potentialWord);
                 }
                 else if (mode.category == 4)
                 {
                     Random rand = new Random();
                     int index = rand.Next(sport.Length);
                     potentialWord = sport[index];
-                    Console.WriteLine(potentialWord);
+                    // Console.WriteLine(potentialWord);
                 }
                 if (mode.difficulty == 0)
                 {
                     if (potentialWord.Length < 6)
                     {
-                        this.word = potentialWord;
+                        this.word = potentialWord.ToLower();
                         searchingForWord = false;
                     }
                 }
@@ -352,9 +352,9 @@ namespace HangManGame
                     }
                 }
 
-                Console.WriteLine(mode.category);
-                Console.WriteLine(mode.difficulty);
-                Console.WriteLine(this.word);
+                // Console.WriteLine(mode.category);
+                // Console.WriteLine(mode.difficulty);
+                // Console.WriteLine(this.word);
             }
             this.knownLetters = new char[word.Length];
         }
@@ -436,7 +436,7 @@ namespace HangManGame
                     this.knownLetters[i] = UI.guessLetter;
                 }
                 // If knownLetters is equal to word.toList<char>(), this.won = true.
-                if (this.knownLetters == word.ToArray<char>()) {
+                if (new string(this.knownLetters) == word) {
                     this.won = true;
                 }
             } else {

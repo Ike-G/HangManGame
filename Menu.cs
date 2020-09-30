@@ -36,6 +36,7 @@ namespace HangManGame
                 Console.Write($"Welcome to Hangman!\nBelow are the available categories: \n{_catList}\nPlease enter the code of your preferred category: ");
                 try {
                     int selectedCategory = Int16.Parse(Console.ReadLine())-1;
+                    Console.WriteLine($"You have selected {g.catList[selectedCategory]}.");
                     g.mode.category = selectedCategory;
                     cont = true;
                 } catch(Exception) {
@@ -48,6 +49,7 @@ namespace HangManGame
                 try {
                     
                     int selectedDifficulty = Int16.Parse(Console.ReadLine())-1;
+                    Console.WriteLine($"You have selected {g.diffList[selectedDifficulty]} difficulty.");
                     g.mode.difficulty = selectedDifficulty;
                     cont = true;
                 } catch(Exception) {
@@ -58,6 +60,7 @@ namespace HangManGame
             // After the game class finishes its logic it should return its status as well as whether the guess was valid or not 
             do {
                 renderWord(g);
+                Console.WriteLine($"Word is: {g.word}");
                 g.evaluateGuess();
                 if (g.guessResult) {
                     Console.WriteLine($"{UI.guessLetter} is valid!");
@@ -69,7 +72,7 @@ namespace HangManGame
             if (g.won) {
                 Console.Write("Congratulations! You won.\n\nWould you like to play again? [y/n]: ");
                 if (Console.ReadLine().Equals("y")) {
-                    new Game();
+                    Program.Main();
                 }
             } else {
                 Console.Write("hah u ded");
@@ -92,12 +95,12 @@ namespace HangManGame
         {
             string rendered = "";
             for (int i = 0; i < g.knownLetters.Length; i++) {
-                if (!g.knownLetters[i].Equals(' '))
+                if (!g.knownLetters[i].Equals('\0'))
                     rendered += Convert.ToString(g.knownLetters[i])+" ";
                 else
                     rendered += "_ ";
             }
-            Console.WriteLine(rendered);
+            Console.WriteLine($"\nCurrent word: {rendered}\n");
         }
     }
 }
