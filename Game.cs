@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Linq;
-using System.Text;
 using System.Diagnostics;
 using System.Security.Cryptography.X509Certificates;
 
@@ -25,22 +24,37 @@ namespace HangManGame
         public bool guessResult { get; set; }
         public int fails { get; set; } = 0;
         public string word { get; set; } // IMPORTANT: After this is declared knownLetters must be set to new List<char>(word.length)
-        public List<Game.Mode> modes { get; set; } = new List<Mode>();
+        public string[] catList { get; set; } = new string[5] {"Brands", "Countries", "Films", "Science", "Sport"};
+        public string[] diffList { get; set; } = new string[2] {"Easy", "Hard"};
         public List<char> knownLetters { get; set; }
 
         public class Mode
         {
-            public string name { get; set; }
-            // Acts as an argument for instantiating the game, data should then be used to add to logic (Initially we can start with a single mode)
-
-            // Zakk - Considering this probably ties best into the categories stuff it's probably best if you work in here and then Harrison can make sure there's a space for it in the mai
+            private int _difficulty;
+            public int difficulty { 
+                get {return _difficulty;} 
+                set {
+                    if (value == 0 || value == 1) 
+                        _difficulty = value;
+                    else 
+                        new Exception();
+                }
+            }
+            private int _category;
+            public int category {
+                get {return _category; }
+                set {
+                    if (value <= 4 && 0 <= value)
+                        _category = value;
+                    else 
+                        new Exception();
+                }
+            }
         }
         public Game()
         {
             // 0 for easy and 1 for hard, 0 is below 6 and 1 is 6 or above
-            int difficulty = 0;
             // 0 is for brands, 1 for countries, 2 for films, 3 for science, 4 for sport
-            int categorySelected = 4;
             // Deffining my arrays
             string[] brands =
             {
@@ -1323,51 +1337,49 @@ namespace HangManGame
 
             // The sorting
             //static string WordSelected()
+
+            // Randomly goes through each array and finds
             string potentialWord = "";
             string selectedWord = "";
             bool searchingForWord = true;
-            while (searchingForWord == true)
+            while (searchingForWord)
                 {
-                    if (categorySelected == 0)
+                    if (mode.category == 0)
                     {
                         Random rand = new Random();
                         int index = rand.Next(brands.Length);
                         potentialWord = brands[index];
                         Console.WriteLine(potentialWord);
                     }
-                    else if (categorySelected == 1)
+                    else if (mode.category == 1)
                     {
                         Random rand = new Random();
                         int index = rand.Next(countries.Length);
                         potentialWord = countries[index];
                         Console.WriteLine(potentialWord);
                     }
-                    else if (categorySelected == 2)
+                    else if (mode.category == 2)
                     {
                         Random rand = new Random();
                         int index = rand.Next(films.Length);
                         potentialWord = films[index];
                         Console.WriteLine(potentialWord);
                     }
-                    else if (categorySelected == 3)
+                    else if (mode.category == 3)
                     {
                         Random rand = new Random();
                         int index = rand.Next(science.Length);
                         potentialWord = science[index];
                         Console.WriteLine(potentialWord);
                     }
-                    else if (categorySelected == 4)
+                    else if (mode.category == 4)
                     {
                         Random rand = new Random();
                         int index = rand.Next(sport.Length);
                         potentialWord = sport[index];
                         Console.WriteLine(potentialWord);
                     }
-                    else
-                    {
-                        Console.WriteLine("Invalid category input, ensure it is between 0 and 4, inclusive.");
-                    }
-                    if (difficulty == 0)
+                    if (mode.difficulty == 0)
                     {
                         if (potentialWord.Length < 6)
                         {
@@ -1375,18 +1387,13 @@ namespace HangManGame
                             searchingForWord = false;
                         }
                     }
-                    else if (difficulty == 1)
+                    else if (mode.difficulty == 1)
                     {
                         if (potentialWord.Length >= 6)
                         {
                             selectedWord = potentialWord;
                             searchingForWord = false;
                         }
-                    }
-                    else
-                    {
-                        Console.WriteLine("Invalid difficulty input, please enter either 0 for easy, or 1 for hard.");
-                        searchingForWord = false;
                     }
 
                     //Console.WriteLine(categorySelected);

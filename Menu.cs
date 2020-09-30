@@ -23,13 +23,39 @@ namespace HangManGame
         static void UIStartUp(Game g) 
         {
             // Getting the game mode input and then sending that to the rest of the program
-            string modeList = "";
-            for (int i = 1; i-1 < g.modes.Count; i++) {
-                modeList += $"{i}: {g.modes[i-1].name}\n";
+            string _catList = "";
+            for (int i = 1; i-1 < g.catList.Length; i++) {
+                _catList += $"{i}: {g.catList[i-1]}\n";
             }
-            Console.WriteLine($"Welcome to Hangman!\nBelow are the available game modes: \n\n{modeList}\n\nPlease enter the code of your preferred game mode: ");
-            g.mode = g.modes[Int16.Parse(Console.ReadLine())];
-
+            string _diffList = "";
+            for (int i = 1; i-1 < g.diffList.Length; i++) {
+                _diffList += $"{i}: {g.diffList[i-1]}\n";
+            }
+            bool cont = false;
+            g.mode = new Game.Mode();
+            while (!cont) {
+                Console.WriteLine($"Welcome to Hangman!\nBelow are the available categories: \n\n{_catList}\n\nPlease enter the code of your preferred category: ");
+                try {
+                    int selectedCategory = Int16.Parse(Console.ReadLine())-1;
+                    g.mode.category = selectedCategory;
+                    cont = true;
+                } catch(Exception) {
+                    Console.WriteLine("Invalid input. Please only enter a value out of those displayed.");
+                }
+            }
+            cont = false;
+            while (!cont) {
+                Console.WriteLine($"What is your preferred difficulty?\nBelow are the available difficulties: \n\n{_diffList}\n\nPlease enter the code of your preferred difficulty: ");
+                try {
+                    
+                    int selectedDifficulty = Int16.Parse(Console.ReadLine())-1;
+                    g.mode.difficulty = selectedDifficulty;
+                    cont = true;
+                } catch(Exception) {
+                    Console.WriteLine("Invalid input. Please only enter a value out of those displayed.");
+                }
+            } 
+            
             // After the game class finishes its logic it should return its status as well as whether the guess was valid or not 
             do {
                 string displayData = g.word;
