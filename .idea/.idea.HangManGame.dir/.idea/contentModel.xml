@@ -3,6 +3,7 @@
   <component name="ContentModelStore">
     <e p="C:\Users\zak\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\zak\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_.19.00" t="ExcludeRecursive" />
+    <e p="C:\Users\zak\AppData\Roaming\JetBrains\Rider2020.2\scratches" t="IncludeRecursive" />
     <e p="C:\Users\zak\RiderProjects\HangManGame" t="IncludeRecursive">
       <e p="bin" t="ExcludeRecursive" />
       <e p="Categories" t="Include">

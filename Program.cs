@@ -46,9 +46,9 @@ namespace HangManGame
 
     class SortingCsv
     {
-        static void Sort(string[] args)
+        static void Main()
         {
-
+            new Game();
         }
     }
 }
