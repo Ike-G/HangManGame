@@ -20,7 +20,7 @@ namespace HangManGame
             "  +---+\n  |   |\n  O   |\n /|\\  |\n / \\  |\n      |\n========="
         };
         
-        static void UIStartUp(Game g) 
+        public static void UIStartUp(Game g) 
         {
             // Getting the game mode input and then sending that to the rest of the program
             string _catList = "";
@@ -32,9 +32,8 @@ namespace HangManGame
                 _diffList += $"{i}: {g.diffList[i-1]}\n";
             }
             bool cont = false;
-            g.mode = new Game.Mode();
             while (!cont) {
-                Console.WriteLine($"Welcome to Hangman!\nBelow are the available categories: \n\n{_catList}\n\nPlease enter the code of your preferred category: ");
+                Console.Write($"Welcome to Hangman!\nBelow are the available categories: \n{_catList}\nPlease enter the code of your preferred category: ");
                 try {
                     int selectedCategory = Int16.Parse(Console.ReadLine())-1;
                     g.mode.category = selectedCategory;
@@ -45,7 +44,7 @@ namespace HangManGame
             }
             cont = false;
             while (!cont) {
-                Console.WriteLine($"What is your preferred difficulty?\nBelow are the available difficulties: \n\n{_diffList}\n\nPlease enter the code of your preferred difficulty: ");
+                Console.Write($"\nWhat is your preferred difficulty?\nBelow are the available difficulties: \n{_diffList}\nPlease enter the code of your preferred difficulty: ");
                 try {
                     
                     int selectedDifficulty = Int16.Parse(Console.ReadLine())-1;
@@ -58,13 +57,12 @@ namespace HangManGame
             
             // After the game class finishes its logic it should return its status as well as whether the guess was valid or not 
             do {
-                string displayData = g.word;
-                if (g.turnEnd) {
-                    if (g.guessResult) {
-                        Console.WriteLine($"{UI.guessLetter} is valid!\n{renderWord(g)}");
-                    } else {
-                        Console.WriteLine($"{UI.guessLetter} is not valid.\n{asciiArt[g.fails]}\n{renderWord(g)}");
-                    }
+                renderWord(g);
+                g.evaluateGuess();
+                if (g.guessResult) {
+                    Console.WriteLine($"{UI.guessLetter} is valid!");
+                } else {
+                    Console.WriteLine($"{UI.guessLetter} is not valid.\n{asciiArt[g.fails]}");
                 }
             } while (!(g.won || g.lost));
             
@@ -79,27 +77,27 @@ namespace HangManGame
             
         }
 
-        static void getGuess(bool cont = true) 
+        public static void getGuess(bool cont = true) 
         {
             Console.Write("Please enter your guess: ");
             try {
-                UI.guessLetter = Convert.ToChar(Console.ReadLine());
+                UI.guessLetter = Char.ToLower(Convert.ToChar(Console.ReadLine()));
             } catch(Exception) {
                 Console.WriteLine("Please enter a valid character");
                 getGuess();
             }
         }
 
-        static string renderWord(Game g) 
+        public static void renderWord(Game g) 
         {
             string rendered = "";
-            for (int i = 0; i < g.knownLetters.Count; i++) {
+            for (int i = 0; i < g.knownLetters.Length; i++) {
                 if (!g.knownLetters[i].Equals(' '))
                     rendered += Convert.ToString(g.knownLetters[i])+" ";
                 else
                     rendered += "_ ";
             }
-            return rendered;
+            Console.WriteLine(rendered);
         }
     }
 }

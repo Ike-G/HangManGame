@@ -13,12 +13,8 @@ namespace HangManGame
         // Below is testing code
         static void Main()
         {
-            List<int> test = new List<int>() {1,2,3}; 
-            string modeList = "";
-            for (int i = 1; i-1 < test.Count; i++) {
-                modeList += $"{i}: {test[i-1]}\n";
-            }
-            Console.WriteLine(modeList);
+            Console.WriteLine("Main is running.");
+            UI.UIStartUp(new Game());
         }
         void categoryTest() 
         {
@@ -40,11 +36,16 @@ namespace HangManGame
                 }
             }
         }
-    }
-
-    class SortingCsv
-    {
-        
+        public static List<int> allIndexesOf(string s, char c) 
+        {
+            List<int> indexes = new List<int>();
+            for (int i = 0; i < s.Length; i++) {
+                if (s[i] == c) {
+                    indexes.Add(i);
+                }
+            }
+            return indexes; 
+        }
     }
 }
 
