@@ -8,7 +8,7 @@ namespace HangManGame
     static class UI 
     {
         // After instantiation this determines the choices of the user with regards to modes/statistics
-        static char guessLetter;
+        public static char guessLetter;
         static string[] asciiArt { get; } = 
         {
             "  +---+\n  |   |\n      |\n      |\n      |\n      |\n=========",

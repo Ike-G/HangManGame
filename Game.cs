@@ -16,7 +16,6 @@ namespace HangManGame
 
         // In instantiating an object of this class the game should start
         // This file contains all logic after the game starts, and dictates when it ends
-        
         public Mode mode { get; set; } 
         public bool won { get; set; } = false;
         public bool lost { get; set; } = false;
@@ -26,6 +25,7 @@ namespace HangManGame
         public string word { get; set; } // IMPORTANT: After this is declared knownLetters must be set to new List<char>(word.length)
         public string[] catList { get; set; } = new string[5] {"Brands", "Countries", "Films", "Science", "Sport"};
         public string[] diffList { get; set; } = new string[2] {"Easy", "Hard"};
+        public List<char> unknownLetters { get; set; }
         public List<char> knownLetters { get; set; }
 
         public class Mode
@@ -304,69 +304,100 @@ namespace HangManGame
             //static string WordSelected()
 
             // Randomly goes through each array and finds
-            string potentialWord = "";
-            string selectedWord = "";
+
+            // Zak - I replaced "selectedWord" with this.word
+
+            string potentialWord = ""; 
             bool searchingForWord = true;
             while (searchingForWord)
+            {
+                if (mode.category == 0)
                 {
-                    if (mode.category == 0)
+                    Random rand = new Random();
+                    int index = rand.Next(brands.Length);
+                    potentialWord = brands[index];
+                    Console.WriteLine(potentialWord);
+                }
+                else if (mode.category == 1)
+                {
+                    Random rand = new Random();
+                    int index = rand.Next(countries.Length);
+                    potentialWord = countries[index];
+                    Console.WriteLine(potentialWord);
+                }
+                else if (mode.category == 2)
+                {
+                    Random rand = new Random();
+                    int index = rand.Next(films.Length);
+                    potentialWord = films[index];
+                    Console.WriteLine(potentialWord);
+                }
+                else if (mode.category == 3)
+                {
+                    Random rand = new Random();
+                    int index = rand.Next(science.Length);
+                    potentialWord = science[index];
+                    Console.WriteLine(potentialWord);
+                }
+                else if (mode.category == 4)
+                {
+                    Random rand = new Random();
+                    int index = rand.Next(sport.Length);
+                    potentialWord = sport[index];
+                    Console.WriteLine(potentialWord);
+                }
+                if (mode.difficulty == 0)
+                {
+                    if (potentialWord.Length < 6)
                     {
-                        Random rand = new Random();
-                        int index = rand.Next(brands.Length);
-                        potentialWord = brands[index];
-                        Console.WriteLine(potentialWord);
+                        this.word = potentialWord;
+                        searchingForWord = false;
                     }
-                    else if (mode.category == 1)
+                }
+                else if (mode.difficulty == 1)
+                {
+                    if (potentialWord.Length >= 6)
                     {
-                        Random rand = new Random();
-                        int index = rand.Next(countries.Length);
-                        potentialWord = countries[index];
-                        Console.WriteLine(potentialWord);
+                        this.word = potentialWord;
+                        searchingForWord = false;
                     }
-                    else if (mode.category == 2)
-                    {
-                        Random rand = new Random();
-                        int index = rand.Next(films.Length);
-                        potentialWord = films[index];
-                        Console.WriteLine(potentialWord);
-                    }
-                    else if (mode.category == 3)
-                    {
-                        Random rand = new Random();
-                        int index = rand.Next(science.Length);
-                        potentialWord = science[index];
-                        Console.WriteLine(potentialWord);
-                    }
-                    else if (mode.category == 4)
-                    {
-                        Random rand = new Random();
-                        int index = rand.Next(sport.Length);
-                        potentialWord = sport[index];
-                        Console.WriteLine(potentialWord);
-                    }
-                    if (mode.difficulty == 0)
-                    {
-                        if (potentialWord.Length < 6)
-                        {
-                            selectedWord = potentialWord;
-                            searchingForWord = false;
-                        }
-                    }
-                    else if (mode.difficulty == 1)
-                    {
-                        if (potentialWord.Length >= 6)
-                        {
-                            selectedWord = potentialWord;
-                            searchingForWord = false;
-                        }
-                    }
+                }
 
-                    Console.WriteLine(mode.category);
-                    Console.WriteLine(mode.difficulty);
-                    Console.WriteLine(selectedWord);
+                Console.WriteLine(mode.category);
+                Console.WriteLine(mode.difficulty);
+                Console.WriteLine(this.word);
+            }
+            this.unknownLetters = this.word.ToList<char>();
+            this.knownLetters = new List<char>(word.Length);
+        }
+        public void guessWord(char[] wordArray) // Removed word and guessLetter as both may be referenced through this object
+        {
+            // bool gameOver = false; - Use (this.won || this.lost) instead of gameOver
+            int allowedGuesses = 0; // If this refers to the number of stages for a single word then it is 6
+            char[] blankArray = word.ToCharArray(); // This returns an array including the word. For a blank list use this.knownLetters
+            int total = 0; // Total wasn't declared in the for loop, I assume it is meant to be here? 
+            int leftToGuess = wordArray.Length; 
+            for (int i = 0; i < allowedGuesses; i++) 
+            {
+                if (wordArray[i] == UI.guessLetter)
+                {
+                    blankArray[i] = UI.guessLetter;
+                    leftToGuess = leftToGuess - 1;
+                    
+                }
+                if (wordArray[i] != UI.guessLetter && (wordArray[i] == ' ' || wordArray[i] == '_'))
+                {
+                    blankArray[i] = '_';
+                    total += 1;
+                }
+                if (total == leftToGuess) {
+                    this.fails += 1; // I'm referring to this.fails instead of wrongGuesses as it is within the object.
+                }
+                if (this.fails == allowedGuesses)
+                {
+                    this.lost = true; // Changed from gameOver to this.lost, as it is more specific. 
                 }
             }
-
-
         }
-    }        
+    }
+}
