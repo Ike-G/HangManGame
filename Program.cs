@@ -59,22 +59,24 @@ namespace HangManGame
         }
     }
 }
-
-mode
-char[] blankArray = word.ToCharArray();
-for (int i = 0; i < blankArray.length; i++)
-{
-    if (char[] wordArray[i] = string guessLetter ) 
+public static void (){
+    mode
+    char[] blankArray = word.ToCharArray();
+    for (int i = 0; i < blankArray.length; i++)
     {
-        char[] blankArray[i] = string guessLetter;
-    }
-    if (char[] wordArray[i] != string guessLetter)
-    {
-        char[] blankArray[i] = "_";
-        int total += 1;
-    }
-    if (int total = wordArray.length) {
-        wrongGuesses += 1
+        if (char[] wordArray[i] = string guessLetter ) 
+        {
+            char[] blankArray[i] = string guessLetter;
+        }
+        if (char[] wordArray[i] != string guessLetter)
+        {
+            char[] blankArray[i] = "_";
+            int total += 1;
+        }
+        if (int total = wordArray.length) {
+            wrongGuesses += 1
+}
+ 
 }
 }
 
