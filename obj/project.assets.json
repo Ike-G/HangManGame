@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "/Users/harrison/.nuget/packages/": {}
+    "C:\\Users\\IscG\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/harrison/RiderProjects/HangManGame_ike/HangManGame.csproj",
+      "projectUniqueName": "C:\\Users\\IscG\\OneDrive\\Documents\\Programming\\HangManGame\\HangManGame.csproj",
       "projectName": "HangManGame",
-      "projectPath": "/Users/harrison/RiderProjects/HangManGame_ike/HangManGame.csproj",
-      "packagesPath": "/Users/harrison/.nuget/packages/",
-      "outputPath": "/Users/harrison/RiderProjects/HangManGame_ike/obj/",
+      "projectPath": "C:\\Users\\IscG\\OneDrive\\Documents\\Programming\\HangManGame\\HangManGame.csproj",
+      "packagesPath": "C:\\Users\\IscG\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\IscG\\OneDrive\\Documents\\Programming\\HangManGame\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/harrison/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\IscG\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -56,7 +56,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/harrison/.dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

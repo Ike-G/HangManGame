@@ -7,56 +7,46 @@ namespace HangManGame
 {
     class Program
     {
+        // Main code
+        
+        
+        // Below is testing code
         static void Main()
         {
-            void categoryTest() 
+            List<int> test = new List<int>() {1,2,3}; 
+            string modeList = "";
+            for (int i = 1; i-1 < test.Count; i++) {
+                modeList += $"{i}: {test[i-1]}\n";
+            }
+            Console.WriteLine(modeList);
+
+            
+        }
+        void categoryTest() 
+        {
+            using (var reader = new StreamReader("Categories/Brands.csv"))
             {
-                using (var reader = new StreamReader("Categories/Brands.csv"))
+                Console.WriteLine("Hello World!");
+                List<string> listA = new List<string>();
+
+                while (!reader.EndOfStream)
                 {
-                    Console.WriteLine("Hello World!");
-                    List<string> listA = new List<string>();
+                    var line = reader.ReadLine();
+                    var values = line.Split(';');
 
-                    while (!reader.EndOfStream)
+                    listA.Add(values[0]);
+                    foreach (var coloumn1 in listA)
                     {
-                        var line = reader.ReadLine();
-                        var values = line.Split(';');
-
-                        listA.Add(values[0]);
-                        foreach (var coloumn1 in listA)
-                        {
-                            Console.WriteLine(coloumn1);
-                        }
+                        Console.WriteLine(coloumn1);
                     }
                 }
             }
-            void asciiTest()
-            {
-                for (int i = 0; i < new UI(new Game()).asciiArt.Length; i++)
-                {
-                    Console.WriteLine(new UI(new Game()).asciiArt[i]);
-                }
-            }
         }
-    }
-    partial class UI 
-    {
-
     }
 
     class SortingCsv
     {
-        static void Sort(string[] args)
-        {
-
-        }
-    }
-    public partial class Game
-    {
-        public List<Game.Mode> modes { get; set; }
-        public partial class Mode 
-        {
-
-        }
+        
     }
 }
 public static void (){
