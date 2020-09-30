@@ -19,8 +19,6 @@ namespace HangManGame
                 modeList += $"{i}: {test[i-1]}\n";
             }
             Console.WriteLine(modeList);
-
-            
         }
         void categoryTest() 
         {
