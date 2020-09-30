@@ -4,46 +4,55 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
 namespace HangManGame 
-{
+{ 
+    
     public partial class Game
     {
+        
         public string word {get; set;}
 
         public static char[] wordArray(word)
         {
             
         }
-        
-        public static char[] guessWord(guessLetter, word, wordArray)
+        char[] blankArray = selectedWord.ToCharArray();
+        int WrongGuesses = 0;
+        int Total = 0;
+        List<char> wordArray = new List<char>() {selectedWord};
+        // for (int i = 0, i < blankArray.length; i++)
+        //{
+        //    blankArray[i] = "_" // to make teh blank slots under scores when printed. 
+        //}
+        // for (int i = 0, i < allowedGuesses, i++)
+        //{
+        //    oldArray == blankArray
+        //    "guess" input == guessLetter ;
+        //    blankArray == *BlankArrayGuesser*;
+        //    if (oldArray = blankArray){
+        //        wrongGuesses = wrongGuesses + 1;
+        //    }
+        //    if guesses == allowedGuesses{
+        //        gameOver;
+        //}
+        // all that need to be done with this function is put it in a for i loop with allowed guesses with new guess letters every i value, 
+        public static char[] BlankArrayGuesser(guessLetter, wordArray, blankArray)
         {
-            bool gameOver = false;
-           
-            char[] blankArray = word.ToCharArray();
-            //for (int i = 0; i ) 
-            int leftToGuess = wordArray().Length
-            for (int i = 0; i < allowedGuesses; i++) 
+            for (int i = 0; i < wordArray().Length; i++)
             {
-                if (char[] wordArray[i] = guessLetter)
+                if (wordArray[i] = UI.guessLetter;)
                 {
-                    char[] blankArray[i] = guessLetter;
-                    leftToGuess = leftToGuess - 1;
-                    
+                    blankArray[i] = UI.guessLetter;
                 }
-                if (char[] wordArray[i] != guessLetter); and (wordArray[i] = " " or wordArray[i] = "_")
+                if (wordArray[i] != guessLetter) and (wordArray[i] = " "; or wordArray[i] = "_")
                 {
-                    char[] blankArray[i] = "_";
-                    int total += 1;
-                }
-                if (int total = leftToGuess) {
-                    wrongGuesses += 1;
-                }
-                if (wrongGuesses = allowedGuesses)
-                {
-                    gameOver = true;
+                    blankArray[i] = "_";
                 }
             }
+            return blankArray;
+        }
+        public static 
 
-            // In instantiating an object of this class the game should start
+        // In instantiating an object of this class the game should start
         // This file contains all logic after the game starts, and dictates when it ends
         partial class Mode 
         {
