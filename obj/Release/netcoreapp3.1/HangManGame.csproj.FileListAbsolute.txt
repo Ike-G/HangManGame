@@ -1,0 +1,13 @@
+C:\Users\IscG\OneDrive\Documents\Programming\HangManGame\bin\Release\netcoreapp3.1\HangManGame.exe
+C:\Users\IscG\OneDrive\Documents\Programming\HangManGame\bin\Release\netcoreapp3.1\HangManGame.deps.json
+C:\Users\IscG\OneDrive\Documents\Programming\HangManGame\bin\Release\netcoreapp3.1\HangManGame.runtimeconfig.json
+C:\Users\IscG\OneDrive\Documents\Programming\HangManGame\bin\Release\netcoreapp3.1\HangManGame.runtimeconfig.dev.json
+C:\Users\IscG\OneDrive\Documents\Programming\HangManGame\bin\Release\netcoreapp3.1\HangManGame.dll
+C:\Users\IscG\OneDrive\Documents\Programming\HangManGame\bin\Release\netcoreapp3.1\HangManGame.pdb
+C:\Users\IscG\OneDrive\Documents\Programming\HangManGame\obj\Release\netcoreapp3.1\HangManGame.csprojAssemblyReference.cache
+C:\Users\IscG\OneDrive\Documents\Programming\HangManGame\obj\Release\netcoreapp3.1\HangManGame.AssemblyInfoInputs.cache
+C:\Users\IscG\OneDrive\Documents\Programming\HangManGame\obj\Release\netcoreapp3.1\HangManGame.AssemblyInfo.cs
+C:\Users\IscG\OneDrive\Documents\Programming\HangManGame\obj\Release\netcoreapp3.1\HangManGame.csproj.CoreCompileInputs.cache
+C:\Users\IscG\OneDrive\Documents\Programming\HangManGame\obj\Release\netcoreapp3.1\HangManGame.dll
+C:\Users\IscG\OneDrive\Documents\Programming\HangManGame\obj\Release\netcoreapp3.1\HangManGame.pdb
+C:\Users\IscG\OneDrive\Documents\Programming\HangManGame\obj\Release\netcoreapp3.1\HangManGame.genruntimeconfig.cache
