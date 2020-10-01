@@ -20,7 +20,7 @@ namespace HangManGame
 
         public bool guessResult { get; set; } // Result of each guess. This is set each time a result is requested.
 
-        public List<char> guessHistory { get; set; } // 
+        public List<char> guessHistory { get; set; } = new List<char>() {};// 
 
         public int fails { get; set; } = 0; // Number of fails. This works as an index value for asciiArt in Menu.cs.
         public string word { get; set; } // The word which the user attempts to guess.
@@ -315,52 +315,42 @@ namespace HangManGame
             bool searchingForWord = true;
             while (searchingForWord) // The while loop ends when a word of length corresponding to difficulty is selected.
             {
+                Random rand = new Random();
                 if (mode.category == 0)
                 {
-                    Random rand = new Random();
                     int index = rand.Next(brands.Length);
                     potentialWord = brands[index];
                 }
                 else if (mode.category == 1)
                 {
-                    Random rand = new Random();
                     int index = rand.Next(countries.Length);
                     potentialWord = countries[index];
                 }
                 else if (mode.category == 2)
                 {
-                    Random rand = new Random();
                     int index = rand.Next(films.Length);
                     potentialWord = films[index];
                 }
                 else if (mode.category == 3)
                 {
-                    Random rand = new Random();
                     int index = rand.Next(science.Length);
                     potentialWord = science[index];
                 }
                 else
                 {
-                    Random rand = new Random();
                     int index = rand.Next(sport.Length);
                     potentialWord = sport[index];
                 }
                 // Data validation occurs in the mode class, therefore it is not necessary in this instance.
-                if (mode.difficulty == 0)
+                if (mode.difficulty == 0 && potentialWord.Length < 6)
                 {
-                    if (potentialWord.Length < 6)
-                    {
-                        this.word = potentialWord.ToLower();
-                        searchingForWord = false;
-                    }
+                    this.word = potentialWord.ToLower();
+                    searchingForWord = false;
                 }
-                else
+                else if (mode.difficulty == 1 && potentialWord.Length >= 5)
                 {
-                    if (potentialWord.Length >= 6)
-                    {
-                        this.word = potentialWord.ToLower();
-                        searchingForWord = false;
-                    }
+                    this.word = potentialWord.ToLower();
+                    searchingForWord = false;
                 }
             }
             this.knownLetters = new char[word.Length]; 
@@ -370,6 +360,8 @@ namespace HangManGame
         {
             // Take input
             UI.getGuess(this);
+            // Add guess to guessHistory
+            guessHistory.Add(UI.guessLetter);
             // If the input is correct, add the input to knownLetters, render word. 
             if (this.word.Contains(UI.guessLetter)) 
             {

@@ -49,7 +49,7 @@ namespace HangManGame
                 try {
                     
                     int selectedDifficulty = Int16.Parse(Console.ReadLine())-1;
-                    Console.WriteLine($"You have selected {g.diffList[selectedDifficulty]} difficulty.");
+                    Console.WriteLine($"You have selected {g.diffList[selectedDifficulty]} difficulty.\n");
                     g.mode.difficulty = selectedDifficulty;
                     cont = true;
                 } catch(Exception) {
@@ -60,8 +60,9 @@ namespace HangManGame
             // After the game class finishes its logic it should return its status as well as whether the guess was valid or not 
             do {
                 renderWord(g); // Word is rendered
-                renderGuesses(g);
+                renderGuesses(g); // Previous guesses are rendered
                 g.evaluateGuess(); // Guess is requested
+                Console.WriteLine("\n==============================================================\n");
                 if (g.guessResult) {
                     Console.WriteLine($"{UI.guessLetter} is valid!");
                 } else {
@@ -75,7 +76,8 @@ namespace HangManGame
                     Program.Main();
                 }
             } else {
-                Console.Write("hah u ded");
+                Console.WriteLine("\nhah u ded");
+                Console.WriteLine($"The word was {g.word}.");
             }
             
         }
@@ -86,7 +88,7 @@ namespace HangManGame
             try {
                 UI.guessLetter = Char.ToLower(Convert.ToChar(Console.ReadLine()));
                 if (g.guessHistory.Contains(UI.guessLetter)) {
-                    Console.WriteLine("You have already made that guess.");
+                    Console.WriteLine("\nYou have already made that guess.");
                     throw new Exception();
                 }
             } catch(Exception) {
@@ -97,7 +99,7 @@ namespace HangManGame
 
         public static void renderWord(Game g) 
         {
-            string rendered = "\nCurrent word: ";
+            string rendered = "Current word: ";
             for (int i = 0; i < g.knownLetters.Length; i++) {
                 if (!g.knownLetters[i].Equals('\0'))
                     rendered += Convert.ToString(g.knownLetters[i])+" ";
