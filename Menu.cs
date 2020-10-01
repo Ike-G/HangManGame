@@ -71,7 +71,7 @@ namespace HangManGame
             } while (!(g.won || g.lost)); // Feedback must run once before code continues.
             
             if (g.won) {
-                Console.Write("Congratulations! You won.\n\nWould you like to play again? [y/n]: ");
+                Console.Write($"Congratulations! You won.\nThe word was {g.word}.\n\nWould you like to play again? [y/n]: ");
                 if (Console.ReadLine().Equals("y")) {
                     Program.Main();
                 }

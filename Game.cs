@@ -310,7 +310,6 @@ namespace HangManGame
                 "NewcastleUnited","SheffieldUnited","Southampton","TottenhamHotspur","WestBromwichAlbion",
                 "WestHamUnited","WolverhamptonWanderers","Luton","Celtic","Hove","Rye","Lewes","York","Leeds"
             };
-
             string potentialWord; 
             bool searchingForWord = true;
             while (searchingForWord) // The while loop ends when a word of length corresponding to difficulty is selected.
