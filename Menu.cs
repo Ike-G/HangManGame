@@ -60,6 +60,7 @@ namespace HangManGame
             // After the game class finishes its logic it should return its status as well as whether the guess was valid or not 
             do {
                 renderWord(g); // Word is rendered
+                renderGuesses(g);
                 g.evaluateGuess(); // Guess is requested
                 if (g.guessResult) {
                     Console.WriteLine($"{UI.guessLetter} is valid!");
@@ -79,27 +80,39 @@ namespace HangManGame
             
         }
 
-        public static void getGuess(bool cont = true) 
+        public static void getGuess(Game g, bool cont = true) 
         {
             Console.Write("Please enter your guess: ");
             try {
                 UI.guessLetter = Char.ToLower(Convert.ToChar(Console.ReadLine()));
+                if (g.guessHistory.Contains(UI.guessLetter)) {
+                    Console.WriteLine("You have already made that guess.");
+                    throw new Exception();
+                }
             } catch(Exception) {
-                Console.WriteLine("Please enter a valid character");
-                getGuess();
+                Console.WriteLine("Please try again.");
+                getGuess(g);
             }
         }
 
         public static void renderWord(Game g) 
         {
-            string rendered = "";
+            string rendered = "\nCurrent word: ";
             for (int i = 0; i < g.knownLetters.Length; i++) {
                 if (!g.knownLetters[i].Equals('\0'))
                     rendered += Convert.ToString(g.knownLetters[i])+" ";
                 else
                     rendered += "_ ";
             }
-            Console.WriteLine($"\nCurrent word: {rendered}\n");
+            Console.WriteLine(rendered);
+        }
+
+        public static void renderGuesses(Game g) 
+        {
+            string rendered = "\nPrevious guesses: ";
+            foreach (char c in g.guessHistory) 
+                rendered += $"{c} ";
+            Console.WriteLine(rendered);
         }
     }
 }

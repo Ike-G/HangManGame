@@ -20,7 +20,7 @@ namespace HangManGame
 
         public bool guessResult { get; set; } // Result of each guess. This is set each time a result is requested.
 
-        // In the future a guessHistory list should be added, noting the result of past guesses and preventing double guesses.
+        public List<char> guessHistory { get; set; } // 
 
         public int fails { get; set; } = 0; // Number of fails. This works as an index value for asciiArt in Menu.cs.
         public string word { get; set; } // The word which the user attempts to guess.
@@ -369,8 +369,7 @@ namespace HangManGame
         public void evaluateGuess() 
         {
             // Take input
-            UI.getGuess();
-
+            UI.getGuess(this);
             // If the input is correct, add the input to knownLetters, render word. 
             if (this.word.Contains(UI.guessLetter)) 
             {
