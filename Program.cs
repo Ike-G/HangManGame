@@ -24,6 +24,16 @@ namespace HangManGame
             }
             return indexes; 
         }
+
+        public static List<string> filterList(List<string> rawList, int minLen = 0, double maxLen = int.MaxValue)
+        {
+            List<string> newList = new List<string>();
+            foreach (string s in rawList) {
+                if (s.Length <= maxLen && s.Length >= minLen)
+                    newList.Add(s);
+            }
+            return newList;
+        }
     }
 }
 

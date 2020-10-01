@@ -21,42 +21,7 @@ namespace HangManGame
         };
         
         public static void UIStartUp(Game g) 
-        {
-            // Getting the game mode input and then sending that to the rest of the program
-            string _catList = "";
-            for (int i = 1; i-1 < g.catList.Length; i++) {
-                _catList += $"{i}: {g.catList[i-1]}\n";
-            }
-            string _diffList = "";
-            for (int i = 1; i-1 < g.diffList.Length; i++) {
-                _diffList += $"{i}: {g.diffList[i-1]}\n";
-            }
-            bool cont = false;
-            while (!cont) {
-                Console.Write($"Welcome to Hangman!\nBelow are the available categories: \n{_catList}\nPlease enter the code of your preferred category: ");
-                try {
-                    int selectedCategory = Int16.Parse(Console.ReadLine())-1;
-                    Console.WriteLine($"You have selected {g.catList[selectedCategory]}.");
-                    g.mode.category = selectedCategory;
-                    cont = true;
-                } catch(Exception) {
-                    Console.WriteLine("Invalid input. Please only enter a value out of those displayed.");
-                }
-            }
-            cont = false;
-            while (!cont) {
-                Console.Write($"\nWhat is your preferred difficulty?\nBelow are the available difficulties: \n{_diffList}\nPlease enter the code of your preferred difficulty: ");
-                try {
-                    
-                    int selectedDifficulty = Int16.Parse(Console.ReadLine())-1;
-                    Console.WriteLine($"You have selected {g.diffList[selectedDifficulty]} difficulty.\n");
-                    g.mode.difficulty = selectedDifficulty;
-                    cont = true;
-                } catch(Exception) {
-                    Console.WriteLine("Invalid input. Please only enter a value out of those displayed.");
-                }
-            } 
-            
+        {            
             // After the game class finishes its logic it should return its status as well as whether the guess was valid or not 
             do {
                 renderWord(g); // Word is rendered
@@ -115,6 +80,44 @@ namespace HangManGame
             foreach (char c in g.guessHistory) 
                 rendered += $"{c} ";
             Console.WriteLine(rendered);
+        }
+
+        public static void getModeData(Game g) 
+        {
+            // Getting the game mode input and then sending that to the rest of the program
+            string _catList = "";
+            for (int i = 1; i-1 < g.catList.Length; i++) {
+                _catList += $"{i}: {g.catList[i-1]}\n";
+            }
+            string _diffList = "";
+            for (int i = 1; i-1 < g.diffList.Length; i++) {
+                _diffList += $"{i}: {g.diffList[i-1]}\n";
+            }
+            bool cont = false;
+            while (!cont) {
+                Console.Write($"Welcome to Hangman!\nBelow are the available categories: \n{_catList}\nPlease enter the code of your preferred category: ");
+                try {
+                    int selectedCategory = Int16.Parse(Console.ReadLine())-1;
+                    Console.WriteLine($"You have selected {g.catList[selectedCategory]}.");
+                    g.mode.category = selectedCategory;
+                    cont = true;
+                } catch(Exception) {
+                    Console.WriteLine("Invalid input. Please only enter a value out of those displayed.");
+                }
+            }
+            cont = false;
+            while (!cont) {
+                Console.Write($"\nWhat is your preferred difficulty?\nBelow are the available difficulties: \n{_diffList}\nPlease enter the code of your preferred difficulty: ");
+                try {
+                    
+                    int selectedDifficulty = Int16.Parse(Console.ReadLine())-1;
+                    Console.WriteLine($"You have selected {g.diffList[selectedDifficulty]} difficulty.\n");
+                    g.mode.difficulty = selectedDifficulty;
+                    cont = true;
+                } catch(Exception) {
+                    Console.WriteLine("Invalid input. Please only enter a value out of those displayed.");
+                }
+            } 
         }
     }
 }
